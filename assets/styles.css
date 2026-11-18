@@ -18,3 +18,5 @@ nav a[aria-current="page"]{color:var(--accent);font-weight:700}
  nav#primary-navigation a{display:block;padding:10px 8px;font-size:14px}
 }
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
+
+.form button:disabled{opacity:.55;cursor:not-allowed}
