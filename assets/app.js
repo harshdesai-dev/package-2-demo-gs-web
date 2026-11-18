@@ -36,7 +36,7 @@
         }
       });
       window.addEventListener("resize", () => {
-        if (window.matchMedia("(min-width: 761px)").matches) closeMenu();
+        if (window.matchMedia("(min-width: 981px)").matches) closeMenu();
       });
     }
 
