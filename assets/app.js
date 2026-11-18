@@ -114,5 +114,8 @@
         status.append(" ", link);
       }
     });
+
+    const submitButton = form.querySelector('button[type="submit"]');
+    if (submitButton) submitButton.disabled = false;
   });
 })();
