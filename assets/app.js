@@ -101,7 +101,8 @@
 
       const whatsappUrl = "https://wa.me/" + WHATSAPP_NUMBER + "?text=" + encodeURIComponent(lines.join("\n"));
       status.textContent = "WhatsApp is opening. Review the message and tap Send there.";
-      const opened = window.open(whatsappUrl, "_blank", "noopener,noreferrer");
+      const opened = window.open(whatsappUrl, "_blank");
+      if (opened) opened.opener = null;
       if (!opened) {
         status.textContent = "Your browser blocked the new tab. Use this link to continue to WhatsApp.";
         const link = document.createElement("a");
